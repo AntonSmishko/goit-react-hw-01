@@ -1,11 +1,17 @@
 import FriendListItem from '../FriendListItem/FriendListItem';
 
-const FriendList = () => {
+const FriendList = ({ data }) => {
     return (
         <ul>
-            <li>
-                <FriendListItem />
-            </li>
+            {data.map(item => (
+                <li key={item.id}>
+                    <FriendListItem
+                        isOnline={item.isOnline}
+                        name={item.name}
+                        avatar={item.avatar}
+                    />
+                </li>
+            ))}
         </ul>
     );
 };
