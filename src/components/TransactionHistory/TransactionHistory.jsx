@@ -1,15 +1,17 @@
+import css from './TransactionHistory.module.css';
+
 const TransactionHistory = ({ data }) => {
     return (
-        <table>
-            <thead>
-                <tr>
+        <table className={css.wrapper}>
+            <thead className={css.head}>
+                <tr className={css.list}>
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody className={css.tbodyWrap}>
                 {data.map(item => (
                     <tr key={item.id}>
                         <td>{item.type}</td>

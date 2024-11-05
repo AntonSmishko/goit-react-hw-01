@@ -1,0 +1,37 @@
+.wrapper {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.head {
+    background-color: grey;
+    color: white;
+
+}
+
+.list th {
+    padding: 12px 15px;
+
+}
+
+.tbodyWrap tr:nth-child(even) {
+    background-color: #f2f2f2;
+
+}
+
+.tbodyWrap tr:hover {
+    background-color: #ddd;
+
+}
+
+.tbodyWrap td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+
+}
