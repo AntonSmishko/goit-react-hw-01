@@ -1,6 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 import Profile from './Profile/Profile';
-
+import '../index.css';
+import 'modern-normalize';
 import userData from '../assets/userData.json';
 import FriendList from './FriendList/FriendList';
 import friendsData from '../assets/friends.json';

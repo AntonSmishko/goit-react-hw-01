@@ -1,13 +1,14 @@
-/* eslint-disable no-irregular-whitespace */
-const Profile = ({ name, tags, location, image, stats }) => {
+import css from './Profile.module.css';
+
+const Profile = ({ name, tag, location, image, stats }) => {
     return (
-        <div>
-            <div>
-                <img src={image} alt="User avatar" />
+        <div className={css.wrapper}>
+            <div className={css.card}>
+                <img className={css.img} src={image} alt="User avatar" />
                 <p>{name}</p>
-                <p>{tags}</p> <p>{location}</p>
+                <p>@{tag}</p> <p>{location}</p>
             </div>
-            <ul>
+            <ul className={css.list}>
                 <li>
                     <span>Followers</span>
                     <span>{stats.followers}</span>
